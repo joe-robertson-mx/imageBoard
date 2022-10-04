@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.imageboard.ImageBoard" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Image Board</name>
+    <description>A board which will fit images to a board</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="Images">
+            <property key="images" type="datasource" isList="true" required="true">
+                <caption>Data source</caption>
+                <description />
+            </property>
+            <property key="widgetList" type="widgets" required="true" dataSource="images">
+                  <caption>Content</caption>
+                  <description>Widgets using data source</description>
+            </property>   
+        </propertyGroup>
+    </properties>
+</widget>
